@@ -5,6 +5,7 @@
  */
 package Funcional;
 
+import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 import javafx.scene.shape.Shape;
 
@@ -18,11 +19,11 @@ import javafx.scene.shape.Shape;
  * @since AgroBomberman 1.0
  */
 public class Personaje {
-    protected double posicionX;//posicion x del pesonaje
-    protected double posicionY;//posicion y del pesonaje
+    protected int posicionX;//posicion x del pesonaje
+    protected int posicionY;//posicion y del pesonaje
     protected Image imagen;
     protected Shape torso;
-    
+
     /**
      * Constructor de la clase encargado de inicializar los atributos
      * @param posicionX Posicion del personaje en el eje x.
@@ -31,7 +32,7 @@ public class Personaje {
      * @param torso Forma de cada personaje para detectar colisiones.
      * @since AgroBomberman 1.0 
      */
-    public Personaje(double posicionX, double posicionY, Image imagen,Shape torso) {
+    public Personaje(int posicionX, int posicionY, Image imagen,Shape torso) {
         this.posicionX = posicionX;
         this.posicionY = posicionY;
         this.imagen = imagen;
@@ -71,7 +72,7 @@ public class Personaje {
      * @return 
      * @since AgroBomberman 1.0
      */
-    public double getPosicionX() {
+    public int getPosicionX() {
         return posicionX;
     }
     
@@ -80,7 +81,7 @@ public class Personaje {
      * @param posicionX 
      * @since AgroBomberman 1.0
      */
-    public void setPosicionX(double posicionX) {
+    public void setPosicionX(int posicionX) {
         this.posicionX = posicionX;
     }
     
@@ -89,7 +90,7 @@ public class Personaje {
      * @return 
      * @since AgroBomberman 1.0
      */
-    public double getPosicionY() {
+    public int getPosicionY() {
         return posicionY;
     }
     
@@ -98,7 +99,7 @@ public class Personaje {
      * @param posicionY 
      * @since AgroBomberman 1.0
      */
-    public void setPosicionY(double posicionY) {
+    public void setPosicionY(int posicionY) {
         this.posicionY = posicionY;
     }
     

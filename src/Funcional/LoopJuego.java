@@ -60,7 +60,7 @@ public class LoopJuego extends AnimationTimer implements Runnable{
         las formas de los elementos del juego y así poder detectar(visualmente)
         cuando halla una colisión.
         */
-        for (int i = 0; i < 13; i++) {
+        /*for (int i = 0; i < 13; i++) {
             for (int j = 0; j < 21; j++) {
                 if ((i==0)||(i==13)) {
                     Shape f = new Rectangle(50*j, 50*i, 50, 50);
@@ -78,7 +78,7 @@ public class LoopJuego extends AnimationTimer implements Runnable{
                     }
                 }
             }
-        }
+        }*/
         this.nivel.dibujarParedes();
         run();
     }      
@@ -97,5 +97,10 @@ public class LoopJuego extends AnimationTimer implements Runnable{
         this.nivel.moverEnemigos(2);
         this.nivel.moverEnemigos(3);
         this.nivel.moverEnemigos(4);
+        this.nivel.moverEnemigos(5);
+        this.nivel.moverEnemigos(6);
+        this.nivel.moverEnemigos(7);
+        this.nivel.moverEnemigos(8);
+        this.nivel.moverEnemigos(9);
     }
 }
