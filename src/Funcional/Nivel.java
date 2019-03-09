@@ -268,7 +268,7 @@ public class Nivel {
                    if(this.muros[i][j].getClass().getName().equals("Funcional.MuroFijo")){
                        if (this.pulsacionTeclado.contains("LEFT")) {
                            this.campesino.setPosicionX(detector + 1);
-                       } else if (this.pulsacionTeclado.contains("RIGTH")) {
+                       } else if (this.pulsacionTeclado.contains("RIGHT")) {
                            this.campesino.setPosicionX(detector - 1);
                        }
                     }else if (this.muros[i][j].getClass().getName().equals("Funcional.Pared")) {
@@ -276,7 +276,7 @@ public class Nivel {
                         if(p.getImagen()!=null){
                              if (this.pulsacionTeclado.contains("LEFT")) {
                                 this.campesino.setPosicionX(detector + 1);
-                            } else if (this.pulsacionTeclado.contains("RIGTH")) {
+                            } else if (this.pulsacionTeclado.contains("RIGHT")) {
                                 this.campesino.setPosicionX(detector - 1);
                             }
                         }
@@ -411,7 +411,7 @@ public class Nivel {
                 }
             }
         }
-        System.out.println(rectificar);
+        //System.out.println(rectificar);
         if (rectificar==4) {
             return 1;
         }
@@ -545,5 +545,10 @@ public class Nivel {
             }
         }
      
+    }
+    public void Semilla(){
+        if(pulsacionTeclado.contains("X")){
+            System.out.println("Hola");
+        }
     }
 }

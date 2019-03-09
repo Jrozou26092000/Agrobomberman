@@ -102,5 +102,6 @@ public class LoopJuego extends AnimationTimer implements Runnable{
         this.nivel.moverEnemigos(7);
         this.nivel.moverEnemigos(8);
         this.nivel.moverEnemigos(9);
+        this.nivel.Semilla();
     }
 }
