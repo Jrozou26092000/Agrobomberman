@@ -339,7 +339,7 @@ public class Nivel {
     public int RectificarMuros(int num){
     double pos_x1 = this.enemigos.get(num).getPosicionX()+50;
     double pos_y1 = this.enemigos.get(num).getPosicionY();
-     if (pos_x1%10!=0) {
+     /*if (pos_x1%10!=0) {
             pos_x1 = pos_x1/10;
             pos_x1 = Math.floor(pos_x1);
             pos_x1= pos_x1*10;
@@ -348,11 +348,11 @@ public class Nivel {
         pos_y1 = pos_y1 / 10;
         pos_y1 = Math.floor(pos_y1);
         pos_y1 = pos_y1 * 10;
-    }
+    }*/
         
      double pos_x2 = this.enemigos.get(num).getPosicionX()-50;
      double pos_y2 = this.enemigos.get(num).getPosicionY();
-     if (pos_x2%10!=0) {
+     /*if (pos_x2%10!=0) {
             pos_x2 = pos_x2/10;
             pos_x2 = Math.floor(pos_x2);
             pos_x2= pos_x2*10;
@@ -361,11 +361,11 @@ public class Nivel {
             pos_y2 = pos_y2/10;
             pos_y2 = Math.floor(pos_y2);
             pos_y2= pos_y2*10;
-        }
+        }*/
         
      double pos_x3 = this.enemigos.get(num).getPosicionX();
      double pos_y3 = this.enemigos.get(num).getPosicionY()+50;
-     if (pos_x3%10!=0) {
+     /*if (pos_x3%10!=0) {
             pos_x3 = pos_x3/10;
             pos_x3 = Math.floor(pos_x3);
             pos_x3= pos_x3*10;
@@ -374,11 +374,11 @@ public class Nivel {
             pos_y3 = pos_y3/10;
             pos_y3 = Math.floor(pos_y3);
             pos_y3= pos_y3*10;
-        }
+        }*/
         
      double pos_x4 = this.enemigos.get(num).getPosicionX();
      double pos_y4 = this.enemigos.get(num).getPosicionY()-50;
-     if (pos_x4%10!=0) {
+     /*if (pos_x4%10!=0) {
             pos_x4 = pos_x4/10;
             pos_x4 = Math.floor(pos_x4);
             pos_x4= pos_x4*10;
@@ -387,7 +387,7 @@ public class Nivel {
             pos_y4 = pos_y4/10;
             pos_y4 = Math.floor(pos_y4);
             pos_y4= pos_y4*10;
-        }
+        }*/
         int rectificar=0;
         int X = 0;
         int Y = 0;
@@ -421,7 +421,7 @@ public class Nivel {
     public boolean DireccionMover(int num){
         double x = this.enemigos.get(num).getPosicionX();
         double y = this.enemigos.get(num).getPosicionY();
-        if (x%10!=0) {
+        /*if (x%10!=0) {
             x = x/10;
             x = Math.floor(x);
             x= (int)x*10;
@@ -430,7 +430,7 @@ public class Nivel {
             y = y/10;
             y = Math.floor(y);
             y= (int)y*10;
-        }
+        }*/
         if(this.enemigos.get(num).getOrientacion().equals("Derecha")){
             x = x+50;
         }else if (this.enemigos.get(num).getOrientacion().equals("Izquierda")) {
